@@ -1,0 +1,39 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in =new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        String string =in.nextLine();
+        StringBuffer stringBuffer=new StringBuffer(string);
+        System.out.print("Enter the start limit : ");
+        int start_limit=in.nextInt();
+        System.out.print("Enter the end limit : ");
+        int end_limit=in.nextInt();
+        stringBuffer.replace(start_limit,end_limit,"Hello");
+        System.out.println("After replacing the string "+stringBuffer);
+
+
+
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
